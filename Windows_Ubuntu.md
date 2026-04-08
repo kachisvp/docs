@@ -1,4 +1,6 @@
-# Setup
+# Windows_Ubuntu.md
+
+## install
 
 コマンドプロンプトを開き、以下のコマンドを実行
 
