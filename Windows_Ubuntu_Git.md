@@ -1,10 +1,15 @@
 # Windows_Ubuntu_Git.md
 
+## requirements
+
+- Windows_Ubuntu.md
+
 ## install
 
 Ubuntuを開き、以下のコマンドを実行
 
 ```
+sudo apt update && sudo apt upgrade -y
 sudo apt install git
 git --version
 ```
@@ -25,8 +30,8 @@ git config --global user.name "Namae Myoji"
 git config --global user.email "mail@example.com"
 
 # proxy
-git config --global http.proxy http://domain:8080
-git config --global https.proxy http://domain:8080
+git config --global http.proxy http://'_domain_':8080
+git config --global https.proxy http://'_domain_':8080
 git config --global url."https://".insteadOf git://
 
 # branch settings

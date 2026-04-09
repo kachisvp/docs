@@ -41,7 +41,11 @@ wsl.exe -d Ubuntu
 # [Retype new password: ]が表示されたら、上記の[_任意のパスワード_]を入力
 ```
 
-> Ubuntuのプロンプトが表示されること ex) user@H370:/mnt/c/Users/'_username_'
+> Ubuntuのプロンプトが表示されること
+
+```
+ex) user@H370:/mnt/c/Users/'_username_'
+```
 
 そのままUbuntuを開き、以下のコマンドを実行
 
@@ -65,7 +69,11 @@ Codename:       noble
 exit
 ```
 
-> コマンドプロンプトのプロンプトが表示されること ex) C:\Users\'_username_'\
+> コマンドプロンプトのプロンプトが表示されること
+
+```
+ex) C:\Users\'_username_'\
+```
 
 そのままコマンドプロンプトを開き、以下のコマンドを実行
 
