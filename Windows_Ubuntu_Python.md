@@ -15,12 +15,15 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev -y
 # sudo apt remove build-essential libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev -y
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
 cat ~/.bashrc
+echo -e '\n# pyenv settings' >> ~/.bashrc
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 cat ~/.bashrc
 source ~/.bashrc
+
 pyenv --version
 ```
 
