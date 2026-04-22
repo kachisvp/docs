@@ -1,0 +1,8 @@
+*.txt
+*.csv
+
+node_modules
+
+normalize.css
+package.json
+package-lock.json
