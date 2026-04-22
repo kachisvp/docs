@@ -87,3 +87,62 @@ wsl --list --verbose
   NAME      STATE           VERSION
 * Ubuntu    Stopped         2
 ```
+
+## settings
+
+### [~/.bashrc]を修正
+
+Ubuntuを開き、以下のコマンドを実行
+
+```
+printenv http_proxy https_proxy no_proxy HTTP_PROXY HTTPS_PROXY NO_PROXY
+cat ~/.bashrc
+echo -e "\n# proxy settings" >> ~/.bashrc
+echo 'proxy_server=http://_proxy_:8080' >> ~/.bashrc
+echo 'export http_proxy=${proxy_server}' >> ~/.bashrc
+echo 'export https_proxy=$http_proxy' >> ~/.bashrc
+echo 'export no_proxy=127.0.0.1,localhost' >> ~/.bashrc
+echo 'export HTTP_PROXY=$http_proxy' >> ~/.bashrc
+echo 'export HTTPS_PROXY=$https_proxy' >> ~/.bashrc
+echo 'export NO_PROXY=$no_proxy' >> ~/.bashrc
+cat ~/.bashrc
+source ~/.bashrc
+printenv http_proxy https_proxy no_proxy HTTP_PROXY HTTPS_PROXY NO_PROXY
+```
+
+### [/etc/apt/apt.conf.d/proxy.conf]を修正
+
+Ubuntuを開き、以下のコマンドを実行
+
+```
+su -
+touch /etc/apt/apt.conf.d/proxy.conf
+
+echo 'Acquire::http::Proxy "http://_proxy_:8080";' >> /etc/apt/apt.conf.d/proxy.conf
+echo 'Acquire::https::Proxy "http://_proxy_:8080";' >> /etc/apt/apt.conf.d/proxy.conf
+
+exit
+cat /etc/apt/apt.conf.d/proxy.conf
+```
+
+> 以下が表示されること
+
+```
+Acquire::http::Proxy "http://_proxy_:8080";
+Acquire::https::Proxy "http://_proxy_:8080";
+```
+
+## commands
+
+コマンドプロンプトを開き、以下のコマンドを実行
+
+```
+# バージョン表示
+wsl --list --verbose
+
+# WSL停止
+wsl --shutdown
+
+# WSL uninstall
+wsl --unregister ubuntu
+```

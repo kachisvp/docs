@@ -30,18 +30,19 @@ git config --global user.name "Namae Myoji"
 git config --global user.email "mail@example.com"
 
 # proxy
-git config --global http.proxy http://'_domain_':8080
-git config --global https.proxy http://'_domain_':8080
+git config --global http.proxy http://_proxy_:8080
+git config --global https.proxy http://_proxy_:8080
 git config --global url."https://".insteadOf git://
 
 # branch settings
 git config --global init.defaultBranch main
 
 # reset settings
-# git config --global --unset init.defaultBranch
+# git config --global --unset http.proxy
+# git config --global --unset https.proxy
 
 # confirm settings
-git config --list
+git config --global --list
 ```
 
 > 以下が表示されること
@@ -50,4 +51,13 @@ git config --list
 user.name=Namae Myoji
 user.email=mail@example.com
 init.defaultbranch=main
+```
+
+## commands
+
+Ubuntuを開き、以下のコマンドを実行
+
+```
+git clone https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/_repository_
+git clone codecommit::ap-northeast-1://_repository_
 ```
