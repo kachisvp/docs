@@ -44,7 +44,7 @@ wsl.exe -d Ubuntu
 > Ubuntuのプロンプトが表示されること
 
 ```
-ex) user@H370:/mnt/c/Users/'_username_'
+ex) user@'_pcname_':/mnt/c/Users/'_username_'
 ```
 
 そのままUbuntuを開き、以下のコマンドを実行
@@ -53,7 +53,7 @@ ex) user@H370:/mnt/c/Users/'_username_'
 lsb_release -a
 ```
 
-以下の通り、Ubuntuのバージョンが表示されること
+> 以下の通り、Ubuntuのバージョンが表示されること
 
 ```
 No LSB modules are available.

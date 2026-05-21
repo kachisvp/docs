@@ -1,4 +1,4 @@
-# VSCode.md
+# VSCode_Settings.md
 
 ## requirements
 
