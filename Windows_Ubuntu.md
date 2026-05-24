@@ -101,7 +101,7 @@ echo -e "\n# proxy settings" >> ~/.bashrc
 echo 'proxy_server=http://_proxy_:8080' >> ~/.bashrc
 echo 'export http_proxy=${proxy_server}' >> ~/.bashrc
 echo 'export https_proxy=$http_proxy' >> ~/.bashrc
-echo 'export no_proxy=127.0.0.1,localhost' >> ~/.bashrc
+echo 'export no_proxy=localhost,127.0.0.1,::1,169.254.169.254' >> ~/.bashrc
 echo 'export HTTP_PROXY=$http_proxy' >> ~/.bashrc
 echo 'export HTTPS_PROXY=$https_proxy' >> ~/.bashrc
 echo 'export NO_PROXY=$no_proxy' >> ~/.bashrc
