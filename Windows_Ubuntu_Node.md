@@ -10,21 +10,39 @@ Ubuntuを開き、以下のコマンドを実行
 
 ```
 sudo apt update && sudo apt upgrade -y
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt install nodejs -y
-npm install -g npm@latest
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+cat ~/.bashrc
+source ~/.bashrc
+nvm --version
+
+nvm install 22
+nvm use 22
+nvm alias default 22
+
+npm i -g npm@latest
+
 node -v
 npm -v
+which node
+which npm
 ```
 
 > 以下が表示されること
 
 ```
 # node -v
-v22.22.2
+v22.22.3
 # npm -v
-11.12.1
+11.15.0
+# which node
+/home/'_username_'/.nvm/versions/node/v22.22.3/bin/node
+# which npm
+/home/'_username_'/.nvm/versions/node/v22.22.3/bin/npm
 ```
+
+## settings
+
+**Proxy設定は、ProxyServer環境下でなければ設定不要**
 
 Ubuntuを開き、以下のコマンドを実行
 

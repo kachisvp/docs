@@ -92,6 +92,8 @@ wsl --list --verbose
 
 ### [~/.bashrc]を修正
 
+**Proxy設定は、ProxyServer環境下でなければ設定不要**
+
 Ubuntuを開き、以下のコマンドを実行
 
 ```
@@ -111,6 +113,8 @@ printenv http_proxy https_proxy no_proxy HTTP_PROXY HTTPS_PROXY NO_PROXY
 ```
 
 ### [/etc/apt/apt.conf.d/proxy.conf]を修正
+
+**Proxy設定は、ProxyServer環境下でなければ設定不要**
 
 Ubuntuを開き、以下のコマンドを実行
 

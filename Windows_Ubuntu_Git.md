@@ -30,6 +30,9 @@ git config --global user.name "Namae Myoji"
 git config --global user.email "mail@example.com"
 
 # proxy
+
+## **Proxy設定は、ProxyServer環境下でなければ設定不要**
+
 git config --global http.proxy http://_proxy_:8080
 git config --global https.proxy http://_proxy_:8080
 git config --global url."https://".insteadOf git://
