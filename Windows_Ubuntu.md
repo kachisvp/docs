@@ -41,7 +41,7 @@ wsl.exe -d Ubuntu
 # [Retype new password: ]が表示されたら、上記の[_任意のパスワード_]を入力
 ```
 
-> Ubuntuのプロンプトが表示されること
+> 以下が表示されること
 
 ```
 ex) user@'_pcname_':/mnt/c/Users/'_username_'
@@ -53,7 +53,7 @@ ex) user@'_pcname_':/mnt/c/Users/'_username_'
 lsb_release -a
 ```
 
-> 以下の通り、Ubuntuのバージョンが表示されること
+> 以下が表示されること
 
 ```
 No LSB modules are available.
@@ -69,7 +69,7 @@ Codename:       noble
 exit
 ```
 
-> コマンドプロンプトのプロンプトが表示されること
+> 以下が表示されること
 
 ```
 ex) C:\Users\'_username_'\

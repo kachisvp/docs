@@ -30,7 +30,7 @@
 lsb_release -a
 ```
 
-> 以下の通り、Ubuntuのバージョンが表示されること
+> 以下が表示されること
 
 ```
 No LSB modules are available.
