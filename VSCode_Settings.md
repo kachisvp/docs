@@ -3,13 +3,8 @@
 ## requirements
 
 - Windows_VSCode.md
-
-## extensions
-
-[Visual Studio Code] > [左側の Extensions]を押下
-[Search Extensions in Marketplace]で以下を検索して[install]を押下
-
-- Prettier - Code formatter
+- Windows_Claude.md
+- Mac_Claude.md
 
 ## settings
 
@@ -32,18 +27,18 @@
   },
 ```
 
-### Prettier
+## Prettier
 
-プロジェクトルートに[.prettier.json], [.prettierignore]を保存する
+### install
 
-```.prettier.json
-{
-  "semi": false,
-  "singleQuote": false,
-  "tabWidth": 2,
-  "trailingComma": "es6"
-}
-```
+[Visual Studio Code] > [左側の Extensions]を押下
+[Search Extensions in Marketplace]で以下を検索して[install]を押下
+
+- Prettier - Code formatter
+
+### settings
+
+プロジェクトルートに[.prettierignore], [.prettierrc.json]を保存する
 
 ```.prettierignore
 *.txt
@@ -55,3 +50,28 @@ normalize.css
 package.json
 package-lock.json
 ```
+
+```.prettierrc.json
+{
+  "semi": false,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}
+```
+
+## Claude
+
+### install
+
+[Visual Studio Code] > [左側の Extensions]を押下
+[Search Extensions in Marketplace]で以下を検索して[install]を押下
+
+- Claude Code for VS Code
+
+### settings
+
+[Visual Studio Code] > [左側の Claude Code]を押下
+[Claude.ai Subscription]を押下
+[Do you want Code to open the external website?]が表示されたら、[Open]を押下
+Websiteで[Claude Code would like to connect to your Claude chat account]が表示されたら、[Authorize]を押下
