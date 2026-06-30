@@ -47,21 +47,6 @@ npm --version
 x.x.x
 ```
 
-### AWS CDK
-
-Ubuntuを開き、以下のコマンドを実行
-
-```
-npm i -D aws-cdk
-npx cdk --version
-```
-
-> 以下が表示されること
-
-```
-x.x.x (build xxxxxxx)
-```
-
 ### aws configure
 
 Ubuntuを開き、以下のコマンドを実行

@@ -21,8 +21,8 @@ nvm alias default 22
 
 npm i -g npm@latest
 
-node -v
-npm -v
+node --version
+npm --version
 which node
 which npm
 ```
@@ -30,9 +30,9 @@ which npm
 > 以下が表示されること
 
 ```
-# node -v
+# node --version
 v22.22.3
-# npm -v
+# npm --version
 11.15.0
 # which node
 /home/'_username_'/.nvm/versions/node/v22.22.3/bin/node
