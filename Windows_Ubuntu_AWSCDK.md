@@ -25,3 +25,18 @@ npx cdk --version
 ```
 x.x.x (build xxxxxxx)
 ```
+
+#### CDK init
+
+Ubuntuを開き、以下のコマンドを実行
+
+```
+mkdir fasse_infra && cd fasse_infra
+npx cdk init app --language typescript
+```
+
+> 以下が表示されること
+
+```
+✅ All done!
+```
