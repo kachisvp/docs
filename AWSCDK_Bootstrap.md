@@ -17,12 +17,12 @@ cdk bootstrap aws://$(aws sts get-caller-identity --query Account --output text)
 
 ```
 x.x.x (build xxxxxxx)
- ⏳  Bootstrapping environment aws://_account_id_/ap-northeast-1...
+Bootstrapping environment aws://_account_id_/ap-northeast-1...
 Trusted accounts for deployment: (none)
 Trusted accounts for lookup: (none)
 Using default execution policy of 'arn:aws:iam::aws:policy/AdministratorAccess'. Pass '--cloudformation-execution-policies' to customize.
 CDKToolkit: creating CloudFormation changeset...
- ✅  Environment aws://_account_id_/ap-northeast-1 bootstrapped.
+Environment aws://_account_id_/ap-northeast-1 bootstrapped.
 ```
 
 ## create Policy for CDK
@@ -82,6 +82,8 @@ _username_
 [I understand the above recommendation and want to proceed to create an access key.]にチェック
 右下の[Next]を押下
 [Create access key]を押下
+
+> 作成した[Access key]を記録するか、ダウンロードすること
 
 ## create IAM user group for CDK
 
