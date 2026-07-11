@@ -21,6 +21,7 @@
   "prettier.configPath": ".prettier.json",
   "prettier.requireConfig": true,
   "window.newWindowDimensions": "inherit",
+  "window.zoomLevel": -1,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
