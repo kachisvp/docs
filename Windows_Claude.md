@@ -31,12 +31,3 @@
 **入力した内容をモデルに再利用させないため**
 
 > [Usage]タブを押下し、現在の利用量を確認
-
-### Keyboard Shortcuts
-
-[Ctrl + K, Ctrl + S]で[Keyboard Shortcuts]を開く
-"Claude Code: Focus Input"を入力
-"Command": "Claude Code: Focus Input"をダブルクリック
-他と衝突しないショートカットを入力。ex ) [Ctrl + Alt + C]
-
-> [Ctrl + Alt + C]で右下の[Claude Code]のチャット欄にフォーカスが移ること

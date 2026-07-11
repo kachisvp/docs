@@ -76,3 +76,12 @@ package-lock.json
 [Claude.ai Subscription]を押下
 [Do you want Code to open the external website?]が表示されたら、[Open]を押下
 Websiteで[Claude Code would like to connect to your Claude chat account]が表示されたら、[Authorize]を押下
+
+#### Keyboard Shortcuts
+
+[Ctrl + K, Ctrl + S]で[Keyboard Shortcuts]を開く
+"Claude Code: Focus Input"を入力
+"Command": "Claude Code: Focus Input"をダブルクリック
+他と衝突しないショートカットを入力。ex ) [Ctrl + Alt + C]
+
+> [Ctrl + Alt + C]で右下の[Claude Code]のチャット欄にフォーカスが移ること

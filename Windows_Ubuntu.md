@@ -150,3 +150,52 @@ wsl --shutdown
 # WSL uninstall
 wsl --unregister ubuntu
 ```
+
+## Claude settings
+
+Ubuntuを開き、以下のコマンドを実行
+
+```
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+> 以下が表示されること
+
+```
+Setting up Claude Code...
+
+✔ Claude Code successfully installed!
+
+  Version: 2.1.207
+
+  Location: ~/.local/bin/claude
+
+
+  Next: Run claude --help to get started
+
+⚠ Setup notes:
+  ● Native installation exists but ~/.local/bin is not in your PATH. Run:
+
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+
+
+✅ Installation complete!
+```
+
+Ubuntuを開き、以下のコマンドを実行
+
+```
+cat ~/.bashrc
+echo -e '\n# claude settings' >> ~/.bashrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+cat ~/.bashrc
+source ~/.bashrc
+
+claude --version
+```
+
+> 以下が表示されること
+
+```
+2.1.207 (Claude Code)
+```
