@@ -1,5 +1,14 @@
 # docs
 
+## Commands
+
+```
+git switch main
+git pull origin main
+git merge develop
+git push origin main
+```
+
 ## TODO
 
 ### awscli, SSO
