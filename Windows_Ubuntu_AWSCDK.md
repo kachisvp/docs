@@ -23,7 +23,7 @@ npx cdk --version
 > 以下が表示されること
 
 ```
-x.x.x (build xxxxxxx)
+2.1128.1 (build d179981)
 ```
 
 #### CDK init

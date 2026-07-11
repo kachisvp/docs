@@ -19,6 +19,7 @@ nvm install 22
 nvm use 22
 nvm alias default 22
 
+# npm自身のinstallはglobal installする。
 npm i -g npm@latest
 
 node --version
@@ -30,10 +31,12 @@ which npm
 > 以下が表示されること
 
 ```
+# nvm --version
+0.40.4
 # node --version
 v22.22.3
 # npm --version
-11.15.0
+12.0.1
 # which node
 /home/'_username_'/.nvm/versions/node/v22.22.3/bin/node
 # which npm

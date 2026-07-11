@@ -8,15 +8,16 @@ AWSCDKをローカル環境で実行するには、事前に[Bootstrap]を実行
 [CloudShell]を開き、以下のコマンドを実行
 
 ```
+# CloudShellは、node, npm, aws-cliインストール済み。aws-cdkもインストール済みだが開発依存インストールする。
 npm i -D aws-cdk
-cdk --version
-cdk bootstrap aws://$(aws sts get-caller-identity --query Account --output text)/ap-northeast-1
+npx cdk --version
+npx cdk bootstrap aws://$(aws sts get-caller-identity --query Account --output text)/ap-northeast-1
 ```
 
 > 以下が表示されること
 
 ```
-x.x.x (build xxxxxxx)
+2.1130.0 (build a7a40e0)
 ⏳  Bootstrapping environment aws://_account_id_/ap-northeast-1...
 Trusted accounts for deployment: (none)
 Trusted accounts for lookup: (none)

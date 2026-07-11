@@ -34,18 +34,7 @@ aws-cli/2.34.28 Python/3.14.3 Linux/5.15.167.4-microsoft-standard-WSL2 exe/x86_6
 
 ### npm
 
-Ubuntuを開き、以下のコマンドを実行
-
-```
-npm i -g npm@latest
-npm --version
-```
-
-> 以下が表示されること
-
-```
-x.x.x
-```
+[Windows_Ubuntu_Node.md]にてインストール済み
 
 ### aws configure
 
