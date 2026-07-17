@@ -33,6 +33,8 @@ CDKToolkit: creating CloudFormation changeset...
 右側の[JSON]を押下
 [Policy editor]に以下を入力
 
+> 後ほどKMSも扱うため、KMSの権限も付与している
+
 ```
 {
   "Version": "2012-10-17",
@@ -41,6 +43,12 @@ CDKToolkit: creating CloudFormation changeset...
       "Effect": "Allow",
       "Action": ["sts:AssumeRole"],
       "Resource": ["arn:aws:iam::_account_id_:role/cdk-*"]
+    },
+    {
+      "Sid": "AllowKmsGetPublicKey",
+      "Effect": "Allow",
+      "Action": "kms:GetPublicKey",
+      "Resource": "*"
     }
   ]
 }
@@ -114,3 +122,49 @@ dev
 - AWSCodeCommitFullAccess
 - CDKDeployPolicy
 ```
+
+## create policy for Cognito
+
+> Cognitoの権限は強力なため、CognitoUserPoolIdで制御する
+
+[AWS Management Console]に[AdministratorAccess]権限のUserでログイン
+[IAM] > [Policies] > 右上の[Create policy]を押下
+右側の[JSON]を押下
+[Policy editor]に以下を入力
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCognitoAdminUserManagement",
+      "Effect": "Allow",
+      "Action": [
+        "cognito-idp:AdminCreateUser",
+        "cognito-idp:AdminSetUserPassword",
+        "cognito-idp:AdminGetUser",
+        "cognito-idp:AdminDeleteUser",
+        "cognito-idp:AdminDisableUser",
+        "cognito-idp:AdminEnableUser"
+      ],
+      "Resource": "arn:aws:cognito-idp:ap-northeast-1:_account_id_:userpool/_cognito_user_pool_id_"
+    }
+  ]
+}
+```
+
+右下の[Next]を押下
+
+[Policy name]に以下を入力
+
+```
+CognitoAdminUserForDevGroup
+```
+
+右下の[Create policy]を押下
+
+> [Policies]画面が表示されること
+
+[Filter by Type]で[Customer managed]を選択
+
+> 作成した[CognitoAdminUserForDevGroup]が表示されること
