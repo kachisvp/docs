@@ -12,6 +12,8 @@ AWSCDKをローカル環境で実行するには、事前に[Bootstrap]を実行
 npm i -D aws-cdk
 npx cdk --version
 npx cdk bootstrap aws://$(aws sts get-caller-identity --query Account --output text)/ap-northeast-1
+# ACM証明書をCDKで管理するため、us-east-1でもBootstrapを実行する
+npx cdk bootstrap aws://$(aws sts get-caller-identity --query Account --output text)/us-east-1
 ```
 
 > 以下が表示されること
